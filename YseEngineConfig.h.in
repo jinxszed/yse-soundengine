@@ -1,0 +1,3 @@
+#define YseEngine_VERSION_MAJOR @YseEngine_VERSION_MAJOR@
+#define YseEngine_VERSION_MINOR @YseEngine_VERSION_MINOR@
+
