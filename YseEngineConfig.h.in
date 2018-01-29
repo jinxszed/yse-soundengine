@@ -1,3 +1,13 @@
+//there will likely be many errors in this file
 #define YseEngine_VERSION_MAJOR @YseEngine_VERSION_MAJOR@
 #define YseEngine_VERSION_MINOR @YseEngine_VERSION_MINOR@
 
+#cmakedefine USE_MYLIBRARY
+#cmakedefine HAVE_METHOD_1
+#cmakedefine HAVE_METHOD_2
+
+//if we have both methods, use them
+#if defined (HAVE_METHOD_1) && defined (HAVE_METHOD_2)
+	desiredOutcome = method_1(method_2(variable));
+#else //some other approach
+//...
